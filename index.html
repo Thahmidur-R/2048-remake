@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2048</title>
+    <link rel="stylesheet" href=".\style.css">
+    
+</head>
+<body>
+    <div class="game-won" id="game-won">
+        <strong class="final">You Win!</strong>
+        <div class="final" id="retry-btn-container"> 
+            <button class='retry' onclick="retry()">Keep playing</button>
+        </div>    
+        </div>
+            <div class="game-over">
+                <span class="final final-score"></span>
+                <div class="final" id="retry-btn-container"> 
+                <button class='retry' onclick="retry()">Try another move!</button>
+                </div>
+                 <div class="final" id="reset-btn-container"> 
+                <button class="final-reset" onclick="reset()">reset</button>
+               </div> 
+            </div>
+            <div class="whole-container">
+    <div class="intro">
+        <h1>2048</h1>
+        <p>How to play:</p>
+        <p>Use arrow keys to move</p>
+        <p>Join two tiles of the same number to make a <p>bigger tile</p></p>
+        <p>Make the 2048 tile to win.</p>
+    </div>
+    
+    <div class="main-container">
+    <div class="title-container">
+        <div class="score" id="score">score: 0</div>
+        <button class="reset" id="reset" onclick="reset()">reset</button>
+        <button class="redo" id="redo" onclick="redo()">undo last move</button>
+    </div>
+    <div class="board" id="board">
+       
+    </div>
+    </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
